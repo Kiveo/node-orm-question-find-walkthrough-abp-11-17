@@ -30,7 +30,7 @@ class Question{
   }
 
   static Find(id){
-    return Promise(function(resolve) {
+    return new Promise(function(resolve) {
 
       resolve();
     })
