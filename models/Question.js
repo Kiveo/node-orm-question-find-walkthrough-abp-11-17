@@ -32,11 +32,11 @@ class Question{
   static async Find(id){
     const sql = "SELECT * FROM questions WHERE id = ?";
     return new Promise(function(resolve) {
-      db.get(sql, [id], function(err, result){
       const question = new Question();
+      db.get(sql, [id], function(err, result){
         question.id = result.id;
+        resolve(question);
       })
-      resolve(question);
     })
   }
 
