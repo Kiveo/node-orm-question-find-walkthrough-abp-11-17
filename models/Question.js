@@ -32,6 +32,7 @@ class Question{
   static async Find(id){
     return new Promise(function(resolve) {
       const question = new Question();
+      const sql = "SELECT * FROM questions WHERE id = ?";
 
       resolve(question);
     })
