@@ -32,7 +32,7 @@ class Question{
   static async Find(id){
     return new Promise(function(resolve) {
       let sql = "SELECT * FROM questions WHERE id = ?";
-      resolve(Question);
+      resolve("some returned question based on id");
     })
   }
 
