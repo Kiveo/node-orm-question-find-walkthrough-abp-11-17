@@ -29,7 +29,7 @@ class Question{
     })
   }
 
-  static find(id){
+  static Find(id){
 
   }
 
