@@ -29,10 +29,9 @@ class Question{
     })
   }
 
-  static Find(id){
+  static async Find(id){
     return new Promise(function(resolve) {
       let sql = "SELECT * FROM questions WHERE id = ?";
-
       resolve(Question);
     })
   }
